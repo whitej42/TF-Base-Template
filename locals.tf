@@ -1,3 +1,3 @@
 locals {
-  project_path = "/Project_Path"
+  project_path = "https://github.com/ClassicSmej/Core-IAM"
 }
