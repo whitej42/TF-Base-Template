@@ -2,13 +2,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"
+      version = "~> 5.0"
     }
   }
 
   backend "s3" {
-    bucket = "{S3_BUCKET_NAME}"
-    key    = "{PROJECT_NAME}/terraform.tfstate"
+    bucket = "jameswhite-terraform-state"
+    key    = "terraform-aws-convertr/terraform.tfstate"
     region = "us-east-1"
   }
 }
